@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>JSMessageExample by Joshua Kehn</title>
@@ -24,23 +23,23 @@
         }
     </style>
     <script type="text/javascript">
-        $(function () {
-            var headline = $("#headline");
-            var selection = $("#selector");
-            function set_headline (text) {
-                headline.text(text);
-            }
 
-            function call_native () {
-                var prop = selection.val();
-               set_headline("asked for " + prop + "..."); window.webkit.messageHandlers.observe.postMessage(prop);
-            }
+		addEventListener("load", function () {
+            var   headline = document.getElementById("headline")
+				, selection = document.getElementById("selector")
+				, set_headline = function (text) {
+					headline.textContent = text;
+				}
+				, call_native = function () {
+					var prop = selection.value;
+					set_headline("asked for " + prop + "...");
+					window.webkit.messageHandlers.observe.postMessage(prop);
+				}
 
             setTimeout(call_native, 1000);
-
-            selection.on("change", call_native);
-
-            // Expose that function globally
+            selection.addEventListener("change", call_native, false);
+            // Expose functions globally
+            window.set_headline = set_headline;
             window.call_native = call_native;
         });
     </script>

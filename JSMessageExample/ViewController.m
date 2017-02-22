@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-#define k_JSBIN_URL @"http://jsbin.com/meniw"
+#define k_JSBIN_URL @"https://mansoft.nl/speechlab/index.html"
 
 @interface ViewController ()
 @property (strong, nonatomic) WKWebView *webView;
