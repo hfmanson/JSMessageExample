@@ -14,6 +14,8 @@
 		03D3E05D19FF3EB500C86782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D3E05C19FF3EB500C86782 /* Images.xcassets */; };
 		03D3E06019FF3EB500C86782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D3E05E19FF3EB500C86782 /* LaunchScreen.xib */; };
 		03D3E06C19FF3EB500C86782 /* JSMessageExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D3E06B19FF3EB500C86782 /* JSMessageExampleTests.m */; };
+		CB9A25FD1E5EFEA300A12FE9 /* html in Resources */ = {isa = PBXBuildFile; fileRef = CB9A25FC1E5EFEA300A12FE9 /* html */; };
+		CB9A25FE1E5EFEAF00A12FE9 /* html in Resources */ = {isa = PBXBuildFile; fileRef = CB9A25FC1E5EFEA300A12FE9 /* html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,7 @@
 		03D3E06519FF3EB500C86782 /* JSMessageExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSMessageExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D3E06A19FF3EB500C86782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03D3E06B19FF3EB500C86782 /* JSMessageExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSMessageExampleTests.m; sourceTree = "<group>"; };
+		CB9A25FC1E5EFEA300A12FE9 /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		03D3E04319FF3EB500C86782 = {
 			isa = PBXGroup;
 			children = (
+				CB9A25FC1E5EFEA300A12FE9 /* html */,
 				03D3E04E19FF3EB500C86782 /* JSMessageExample */,
 				03D3E06819FF3EB500C86782 /* JSMessageExampleTests */,
 				03D3E04D19FF3EB500C86782 /* Products */,
@@ -168,6 +172,7 @@
 				TargetAttributes = {
 					03D3E04B19FF3EB500C86782 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = NAUE7Z64X8;
 					};
 					03D3E06419FF3EB500C86782 = {
 						CreatedOnToolsVersion = 6.1;
@@ -199,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9A25FD1E5EFEA300A12FE9 /* html in Resources */,
 				03D3E05B19FF3EB500C86782 /* Main.storyboard in Resources */,
 				03D3E06019FF3EB500C86782 /* LaunchScreen.xib in Resources */,
 				03D3E05D19FF3EB500C86782 /* Images.xcassets in Resources */,
@@ -209,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9A25FE1E5EFEAF00A12FE9 /* html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,8 +352,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NAUE7Z64X8;
 				INFOPLIST_FILE = JSMessageExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.mansoft.JSMessageExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -355,8 +364,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NAUE7Z64X8;
 				INFOPLIST_FILE = JSMessageExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.mansoft.JSMessageExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -414,6 +425,7 @@
 				03D3E07119FF3EB500C86782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03D3E07219FF3EB500C86782 /* Build configuration list for PBXNativeTarget "JSMessageExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +434,7 @@
 				03D3E07419FF3EB500C86782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

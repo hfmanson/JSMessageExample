@@ -9,8 +9,9 @@
 #import <WebKit/WebKit.h>
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <WKScriptMessageHandler>
+@interface ViewController : UIViewController  <WKScriptMessageHandler, WKNavigationDelegate, WKUIDelegate>
 
+@property (nonatomic, strong) WKWebView* webView;
 
 @end
 
